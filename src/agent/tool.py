@@ -1,6 +1,6 @@
 from langchain_core.tools import tool
 
-from agents.workflow import WORKFLOW_APP
+from agent.workflow import WORKFLOW_APP
 
 
 @tool

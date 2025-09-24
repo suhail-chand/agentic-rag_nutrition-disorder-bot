@@ -5,11 +5,11 @@ from langchain.prompts import ChatPromptTemplate
 from langchain.agents import (AgentExecutor, 
                               create_tool_calling_agent)
 
-from agents.prompts import AGENT
+from utils.prompts import AGENT
 from config import (MEM0_API_KEY, 
                     OPENAI_API_KEY, 
                     OPENAI_API_BASE)
-from agents.tool import agentic_rag
+from agent.tool import agentic_rag
 
 
 class NutritionBot:

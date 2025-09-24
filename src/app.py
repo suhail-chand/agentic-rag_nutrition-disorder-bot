@@ -1,7 +1,7 @@
 import streamlit as st
 
-from agents.nutrition_bot import NutritionBot
-from utils.guardrails import filter_input_with_llama_guard
+from agent.nutrition_bot import NutritionBot
+from utils.guardrail import filter_input_with_llama_guard
 
 
 def nutrition_disorder_streamlit():

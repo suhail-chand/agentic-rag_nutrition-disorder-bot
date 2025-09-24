@@ -2,10 +2,10 @@ from langchain.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
 from config import llm
-from agents.prompts import (GENERATE, 
-                            EXPANSION, 
-                            REFINEMENT, 
-                            RESPONSE_REFINEMENT)
+from utils.prompts import (GENERATE, 
+                           EXPANSION, 
+                           REFINEMENT, 
+                           RESPONSE_REFINEMENT)
 
 
 def craft_response(state: dict) -> dict:

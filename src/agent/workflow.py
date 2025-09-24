@@ -1,8 +1,8 @@
 from typing import Any, Dict, List, TypedDict
 from langgraph.graph import StateGraph, END, START
 
-from agents.generate import *
-from retrieval.retrieve import retrieve_context
+from agent.generate import *
+from utils.retrieve import retrieve_context
 from evaluation.precision import (check_precision, 
                                   should_continue_precision)
 from evaluation.groundedness import (score_groundedness, 
@@ -10,6 +10,10 @@ from evaluation.groundedness import (score_groundedness,
 
 
 class AgentState(TypedDict):
+    """
+    Defines the AgentState class using TypedDict. 
+    It represents the state of the AI agent at different stages of the workflow.
+    """
     query: str                          # The current user query
     expanded_query: str                 # The expanded version of the user query
     context: List[Dict[str, Any]]       # Retrieved documents (content and metadata)

@@ -2,7 +2,7 @@ from langchain.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser 
 
 from config import llm
-from agents.prompts import GROUNDEDNESS
+from utils.prompts import GROUNDEDNESS
 
 
 def score_groundedness(state: dict) -> dict:

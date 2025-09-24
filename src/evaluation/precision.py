@@ -2,7 +2,7 @@ from langchain.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser 
 
 from config import llm
-from agents.prompts import PRECISION
+from utils.prompts import PRECISION
 
 
 def check_precision(state: dict) -> dict:
@@ -53,3 +53,4 @@ def should_continue_precision(state: dict) -> str:
         else:
             print(f" Precision Score Threshold Not met. Refining Query.")
             return "refine_query"
+        

@@ -14,7 +14,7 @@ OPENAI_API_BASE = os.environ["OPENAI_API_BASE"]
 
 CHAT_MODEL = "gpt-4o-mini"
 EMBEDDING_MODEL = "text-embedding-ada-002"
-STORE_DIRECTORY = "../data/nutritional_db"
+STORE_DIRECTORY = "../data/store/nutritional_db"
 STORE_COLLECTION = "nutritional_hypotheticals"
 
 # Initialize LLM
